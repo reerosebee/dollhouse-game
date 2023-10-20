@@ -56,41 +56,41 @@ public class Game
 		{
 			//create font basic
 			try{
-				basic = Font.createFont(Font.TRUETYPE_FONT, new File("Riangriung-Demo 2.otf")).deriveFont(75f);	
+				basic = Font.createFont(Font.TRUETYPE_FONT, new File("text-fonts/Riangriung-Demo 2.otf")).deriveFont(75f);	
 				GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-				ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("Riangriung-Demo 2.otf")));			
+				ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("text-fonts/Riangriung-Demo 2.otf")));			
 			}
 			catch(IOException | FontFormatException e){}	
 			
 			//basic2
 			try{
-				basic2 = Font.createFont(Font.TRUETYPE_FONT, new File("Riangriung-Demo 2.otf")).deriveFont(50f);	
+				basic2 = Font.createFont(Font.TRUETYPE_FONT, new File("text-fonts/Riangriung-Demo 2.otf")).deriveFont(50f);	
 				GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-				ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("Riangriung-Demo 2.otf")));			
+				ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("text-fonts/Riangriung-Demo 2.otf")));			
 			}
 			catch(IOException | FontFormatException e){}	
 			
 			//winMoney
 			try{
-				winMoney = Font.createFont(Font.TRUETYPE_FONT, new File("Jack Armstrong.ttf")).deriveFont(75f);	
+				winMoney = Font.createFont(Font.TRUETYPE_FONT, new File("text-fonts/Jack Armstrong.ttf")).deriveFont(75f);	
 				GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-				ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("Jack Armstrong.ttf")));			
+				ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("text-fonts/Jack Armstrong.ttf")));			
 			}
 			catch(IOException | FontFormatException e){}	
 			
 			//cost
 			try{
-				cost = Font.createFont(Font.TRUETYPE_FONT, new File("Jack Armstrong.ttf")).deriveFont(30f);	
+				cost = Font.createFont(Font.TRUETYPE_FONT, new File("text-fonts/Jack Armstrong.ttf")).deriveFont(30f);	
 				GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-				ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("Jack Armstrong.ttf")));			
+				ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("text-fonts/Jack Armstrong.ttf")));			
 			}
 			catch(IOException | FontFormatException e){}	
 			
 			//leaderboard
 			try{
-				leaderboard = Font.createFont(Font.TRUETYPE_FONT, new File("Premier2019-rPv9.ttf")).deriveFont(65f);	
+				leaderboard = Font.createFont(Font.TRUETYPE_FONT, new File("text-fonts/Premier2019-rPv9.ttf")).deriveFont(65f);	
 				GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-				ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("Premier2019-rPv9.ttf")));			
+				ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("text-fonts/Premier2019-rPv9.ttf")));			
 			}
 			catch(IOException | FontFormatException e){}	
 			
@@ -176,29 +176,29 @@ public class Game
 			}, 0, 17);
 			
 			//resize ImageIcons to fit Jbuttons
-			plB = new ImageIcon("Play.PNG");
+			plB = new ImageIcon("images/Play.PNG");
 			Image img = plB.getImage() ;  
 			Image newimg = img.getScaledInstance(1600, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			plB = new ImageIcon( newimg );
-			plB2 = new ImageIcon("Play2.PNG");
+			plB2 = new ImageIcon("images/Play2.PNG");
 			img = plB2.getImage() ;  
 			newimg = img.getScaledInstance(1600, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			plB2 = new ImageIcon( newimg );
 			
-			leB = new ImageIcon("Lead.PNG");
+			leB = new ImageIcon("images/Lead.PNG");
 			img = leB.getImage() ;  
 			newimg = img.getScaledInstance(1600, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			leB = new ImageIcon( newimg );
-			leB2 = new ImageIcon("Lead2.PNG");
+			leB2 = new ImageIcon("images/Lead2.PNG");
 			img = leB2.getImage() ;  
 			newimg = img.getScaledInstance(1600, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			leB2 = new ImageIcon( newimg );
 			
-			hoB = new ImageIcon("How.PNG");
+			hoB = new ImageIcon("images/How.PNG");
 			img = hoB.getImage() ;  
 			newimg = img.getScaledInstance(1600, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			hoB = new ImageIcon( newimg );
-			hoB2 = new ImageIcon("How2.PNG");
+			hoB2 = new ImageIcon("images/How2.PNG");
 			img = hoB2.getImage() ;  
 			newimg = img.getScaledInstance(1600, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			hoB2 = new ImageIcon( newimg );
@@ -313,13 +313,13 @@ public class Game
 			super.paintComponent(g);
 			Graphics2D g2d = (Graphics2D)g;
 			
-			Image background = new ImageIcon("intro.PNG").getImage();
-			Image doll = new ImageIcon("dollhouseNorm.JPG").getImage();
-			Image doll2 = new ImageIcon("dollDark.gif").getImage();
-			Image background2 = new ImageIcon("introRed.PNG").getImage();
-			Image spikes = new ImageIcon("spikes.png").getImage();
-			Image title = new ImageIcon("title.png").getImage();
-			Image title2 = new ImageIcon("titleRed.png").getImage();
+			Image background = new ImageIcon("images/intro.PNG").getImage();
+			Image doll = new ImageIcon("images/dollhouseNorm.JPG").getImage();
+			Image doll2 = new ImageIcon("gifs/dollDark.gif").getImage();
+			Image background2 = new ImageIcon("images/introRed.PNG").getImage();
+			Image spikes = new ImageIcon("images/spikes.png").getImage();
+			Image title = new ImageIcon("images/title.png").getImage();
+			Image title2 = new ImageIcon("images/titleRed.png").getImage();
 				
 			if(red)
 			{
@@ -418,27 +418,27 @@ public class Game
 				}
 			}, 0, 17);
 			
-			ImageIcon baB = new ImageIcon("Back.PNG");
+			ImageIcon baB = new ImageIcon("images/Back.PNG");
 			Image img = baB.getImage() ;  
 			Image newimg = img.getScaledInstance(1400, 600,  java.awt.Image.SCALE_SMOOTH ) ;  
 			baB = new ImageIcon( newimg );
 			
-			ImageIcon neB = new ImageIcon("next.PNG");
+			ImageIcon neB = new ImageIcon("images/next.PNG");
 			img = neB.getImage() ;  
 			newimg = img.getScaledInstance(550, 600,  java.awt.Image.SCALE_SMOOTH ) ;  
 			neB = new ImageIcon( newimg );
 			
-			ImageIcon prB = new ImageIcon("previous.PNG");
+			ImageIcon prB = new ImageIcon("images/previous.PNG");
 			img = prB.getImage() ;  
 			newimg = img.getScaledInstance(550, 600,  java.awt.Image.SCALE_SMOOTH ) ;  
 			prB = new ImageIcon( newimg );
 			
-			ImageIcon hdB = new ImageIcon("howDown.PNG");
+			ImageIcon hdB = new ImageIcon("images/howDown.PNG");
 			img = hdB.getImage() ;  
 			newimg = img.getScaledInstance(550, 600,  java.awt.Image.SCALE_SMOOTH ) ;  
 			hdB = new ImageIcon( newimg );
 			
-			ImageIcon huD = new ImageIcon("howUp.PNG");
+			ImageIcon huD = new ImageIcon("images/howUp.PNG");
 			img = huD.getImage() ;  
 			newimg = img.getScaledInstance(550, 600,  java.awt.Image.SCALE_SMOOTH ) ;  
 			huD = new ImageIcon( newimg );
@@ -510,13 +510,13 @@ public class Game
 		{
 			super.paintComponent(g);
 			
-			Image bg = new ImageIcon("bg.JPEG").getImage();
-			Image ht = new ImageIcon("howTitle.png").getImage();
-			Image hd = new ImageIcon("howDoll.png").getImage();
-			Image he = new ImageIcon("howEnter.png").getImage();
-			Image hh = new ImageIcon("howHome.png").getImage();
-			Image hb = new ImageIcon("howBack.png").getImage();
-			Image hba = new ImageIcon("howBase.png").getImage();
+			Image bg = new ImageIcon("images/bg.JPEG").getImage();
+			Image ht = new ImageIcon("images/howTitle.png").getImage();
+			Image hd = new ImageIcon("images/howDoll.png").getImage();
+			Image he = new ImageIcon("images/howEnter.png").getImage();
+			Image hh = new ImageIcon("images/howHome.png").getImage();
+			Image hb = new ImageIcon("images/howBack.png").getImage();
+			Image hba = new ImageIcon("images/howBase.png").getImage();
 			
 			g.drawImage(bg, x1 , 0 , 2000, 820, null);
 			g.drawImage(bg, x2 , 0 , 2000, 820, null);
@@ -624,22 +624,22 @@ public class Game
 				}
 			}, 0, 17);
 			
-			ImageIcon neB = new ImageIcon("next.PNG");
+			ImageIcon neB = new ImageIcon("images/next.PNG");
 			Image img = neB.getImage() ;  
 			Image newimg = img.getScaledInstance(550, 600,  java.awt.Image.SCALE_SMOOTH ) ;  
 			neB = new ImageIcon( newimg );
 			
-			ImageIcon prB = new ImageIcon("previous.PNG");
+			ImageIcon prB = new ImageIcon("images/previous.PNG");
 			img = prB.getImage() ;  
 			newimg = img.getScaledInstance(550, 600,  java.awt.Image.SCALE_SMOOTH ) ;  
 			prB = new ImageIcon( newimg );
 			
-			ImageIcon baB = new ImageIcon("Back.PNG");
+			ImageIcon baB = new ImageIcon("images/Back.PNG");
 			img = baB.getImage() ;  
 			newimg = img.getScaledInstance(1400, 600,  java.awt.Image.SCALE_SMOOTH ) ;  
 			baB = new ImageIcon( newimg );
 			
-			ImageIcon enB = new ImageIcon("enterName.PNG");
+			ImageIcon enB = new ImageIcon("images/enterName.PNG");
 			img = enB.getImage() ;  
 			newimg = img.getScaledInstance(450, 575,  java.awt.Image.SCALE_SMOOTH ) ;  
 			enB = new ImageIcon( newimg );
@@ -726,9 +726,9 @@ public class Game
 		public void read(int file)
 		{
 			info = "";
-			File inFile = new File ("game1.txt"); 
-			if(file == 2) inFile = new File ("game2.txt"); 
-			if(file == 3) inFile = new File ("game3.txt"); 
+			File inFile = new File ("text-fonts/game1.txt"); 
+			if(file == 2) inFile = new File ("text-fonts/game2.txt"); 
+			if(file == 3) inFile = new File ("text-fonts/game3.txt"); 
 			
 			input = null; 
 			try
@@ -834,9 +834,9 @@ public class Game
 		//write new information/organization into specific file
 		public void write(int file)
 		{
-			File outFile = new File ("game1.txt"); 
-			if(file == 2) outFile = new File ("game2.txt"); 
-			if(file == 3) outFile = new File ("game3.txt"); 
+			File outFile = new File ("text-fonts/game1.txt"); 
+			if(file == 2) outFile = new File ("text-fonts/game2.txt"); 
+			if(file == 3) outFile = new File ("text-fonts/game3.txt"); 
 			PrintWriter makesOutput = null;
 			try
 			{
@@ -901,11 +901,11 @@ public class Game
 				info = "";
 			}	
 			
-			Image back = new ImageIcon("Leaderboard1.png").getImage();
-			if(num == 1) back = new ImageIcon("Leaderboard2.png").getImage();
-			if(num == 2) back = new ImageIcon("Leaderboard3.png").getImage();
-			Image clouds = new ImageIcon("cloud.gif").getImage();
-			Image enterBox = new ImageIcon("entName.png").getImage();
+			Image back = new ImageIcon("images/Leaderboard1.png").getImage();
+			if(num == 1) back = new ImageIcon("images/Leaderboard2.png").getImage();
+			if(num == 2) back = new ImageIcon("images/Leaderboard3.png").getImage();
+			Image clouds = new ImageIcon("gifs/cloud.gif").getImage();
+			Image enterBox = new ImageIcon("images/entName.png").getImage();
 			
 			g.drawImage(clouds, 0, 0, 1500, 1000,null);
 			g.drawImage(clouds, 1500, 0, 1500, 1000,null);
@@ -941,17 +941,17 @@ public class Game
 			
 			revalidate();
 			x1 = 0; x2 = 1500;
-			ImageIcon baB = new ImageIcon("Back.PNG");
+			ImageIcon baB = new ImageIcon("images/Back.PNG");
 			Image img = baB.getImage() ;  
 			Image newimg = img.getScaledInstance(1400, 600,  java.awt.Image.SCALE_SMOOTH ) ;  
 			baB = new ImageIcon( newimg );
 			
-			ImageIcon gaB = new ImageIcon("Games.PNG");
+			ImageIcon gaB = new ImageIcon("images/Games.PNG");
 			img = gaB.getImage() ;  
 			newimg = img.getScaledInstance(1400, 600,  java.awt.Image.SCALE_SMOOTH ) ;  
 			gaB = new ImageIcon( newimg );
 			
-			ImageIcon paB = new ImageIcon("Purchase.PNG");
+			ImageIcon paB = new ImageIcon("images/Purchase.PNG");
 			img = paB.getImage() ;  
 			newimg = img.getScaledInstance(1400, 600,  java.awt.Image.SCALE_SMOOTH ) ;  
 			paB = new ImageIcon( newimg );
@@ -1003,33 +1003,33 @@ public class Game
 			super.paintComponent(g);
 			
 			Graphics2D g2d = (Graphics2D)g;
-			Image clouds = new ImageIcon("cloud2.gif").getImage();
-			if(ha<1 || fo<1 || she <1) clouds = new ImageIcon("light.gif").getImage();
-			if(ha>0 && fo>0 && she >0) clouds = new ImageIcon("cloud.gif").getImage();
-			if(ha>1 && fo>1 && she >1) clouds = new ImageIcon("cloud2.gif").getImage();
+			Image clouds = new ImageIcon("gifs/cloud2.gif").getImage();
+			if(ha<1 || fo<1 || she <1) clouds = new ImageIcon("gifs/light.gif").getImage();
+			if(ha>0 && fo>0 && she >0) clouds = new ImageIcon("gifs/cloud.gif").getImage();
+			if(ha>1 && fo>1 && she >1) clouds = new ImageIcon("gifs/cloud2.gif").getImage();
 			
-			Image money = new ImageIcon("money.png").getImage();
-			Image grass = new ImageIcon("grass.PNG").getImage();
-			tree = new ImageIcon("tree.PNG").getImage();
-			waterfall = new ImageIcon("waterfall.PNG").getImage();
-			crops = new ImageIcon("crops.PNG").getImage();
-			flower = new ImageIcon("flower.PNG").getImage();
-			house = new ImageIcon("house.PNG").getImage();
-			pebbles = new ImageIcon("pebbles.PNG").getImage();
-			Image girl = new ImageIcon("dollGirl.PNG").getImage();
-			if(ha<1 || fo<1 || she <1) girl = new ImageIcon("dollMad.PNG").getImage();
-			if(ha>=1 && fo>=1 && she >=1) girl = new ImageIcon("dollGirl.PNG").getImage();
-			if(ha==2 && fo==2 && she ==2) girl = new ImageIcon("dollHappy.PNG").getImage();
+			Image money = new ImageIcon("images/money.png").getImage();
+			Image grass = new ImageIcon("images/grass.PNG").getImage();
+			tree = new ImageIcon("images/tree.PNG").getImage();
+			waterfall = new ImageIcon("images/waterfall.PNG").getImage();
+			crops = new ImageIcon("images/crops.PNG").getImage();
+			flower = new ImageIcon("images/flower.PNG").getImage();
+			house = new ImageIcon("images/house.PNG").getImage();
+			pebbles = new ImageIcon("images/pebbles.PNG").getImage();
+			Image girl = new ImageIcon("images/dollGirl.PNG").getImage();
+			if(ha<1 || fo<1 || she <1) girl = new ImageIcon("images/dollMad.PNG").getImage();
+			if(ha>=1 && fo>=1 && she >=1) girl = new ImageIcon("images/dollGirl.PNG").getImage();
+			if(ha==2 && fo==2 && she ==2) girl = new ImageIcon("images/dollHappy.PNG").getImage();
 			
-			Image hapBar = new ImageIcon("happy_empty.png").getImage();
-			if(ha==1) hapBar = new ImageIcon("happy_half.png").getImage();
-			if(ha==2) hapBar = new ImageIcon("happy_whole.png").getImage();
-			Image fooBar = new ImageIcon("food_empty.png").getImage();
-			if(fo==1) fooBar = new ImageIcon("food_half.png").getImage();
-			if(fo==2) fooBar = new ImageIcon("food_whole.png").getImage();
-			Image sheBar = new ImageIcon("shelter_empty.png").getImage();
-			if(she==1) sheBar = new ImageIcon("shelter_half.png").getImage();
-			if(she==2) sheBar = new ImageIcon("shelter_whole.png").getImage();
+			Image hapBar = new ImageIcon("images/happy_empty.png").getImage();
+			if(ha==1) hapBar = new ImageIcon("images/happy_half.png").getImage();
+			if(ha==2) hapBar = new ImageIcon("images/happy_whole.png").getImage();
+			Image fooBar = new ImageIcon("images/food_empty.png").getImage();
+			if(fo==1) fooBar = new ImageIcon("images/food_half.png").getImage();
+			if(fo==2) fooBar = new ImageIcon("images/food_whole.png").getImage();
+			Image sheBar = new ImageIcon("images/shelter_empty.png").getImage();
+			if(she==1) sheBar = new ImageIcon("images/shelter_half.png").getImage();
+			if(she==2) sheBar = new ImageIcon("images/shelter_whole.png").getImage();
 			
 			if(ha<1 || fo<1 || she <1)
 			{
@@ -1102,12 +1102,12 @@ public class Game
 					repaint();
 				}
 			}, 0, 17);
-			ImageIcon btB = new ImageIcon("Back.PNG");
+			ImageIcon btB = new ImageIcon("images/Back.PNG");
 			Image img = btB.getImage() ;  
 			Image newimg = img.getScaledInstance(1400, 600,  java.awt.Image.SCALE_SMOOTH ) ;  
 			btB = new ImageIcon( newimg );
 			
-			ImageIcon ib = new ImageIcon("TreeBuy.png");
+			ImageIcon ib = new ImageIcon("images/TreeBuy.png");
 			
 			back = new JButton("Back To House");
 			back.setOpaque(false);
@@ -1133,9 +1133,9 @@ public class Game
 			buy[5] = new JButton("Walkway");
 		
 			for(int i = 0; i < 3; i++){
-				if(i==0) ib = new ImageIcon("TreeBuy.png");
-				if(i==1) ib = new ImageIcon("WaterfallBuy.png");
-				if(i==2) ib = new ImageIcon("CropsBuy.png");
+				if(i==0) ib = new ImageIcon("images/TreeBuy.png");
+				if(i==1) ib = new ImageIcon("images/WaterfallBuy.png");
+				if(i==2) ib = new ImageIcon("images/CropsBuy.png");
 				img = ib.getImage() ;  
 				newimg = img.getScaledInstance(1700, 800,  java.awt.Image.SCALE_SMOOTH ) ;  
 				ib = new ImageIcon( newimg );
@@ -1150,9 +1150,9 @@ public class Game
 			}
 			
 			for(int i = 0; i < 3; i++){
-				if(i==0) ib = new ImageIcon("FlowersBuy.png");
-				if(i==1) ib = new ImageIcon("HouseBuy.png");
-				if(i==2) ib = new ImageIcon("WalkwayBuy.png");
+				if(i==0) ib = new ImageIcon("images/FlowersBuy.png");
+				if(i==1) ib = new ImageIcon("images/HouseBuy.png");
+				if(i==2) ib = new ImageIcon("images/WalkwayBuy.png");
 				img = ib.getImage() ;  
 				newimg = img.getScaledInstance(1700, 800,  java.awt.Image.SCALE_SMOOTH ) ;  
 				ib = new ImageIcon( newimg );
@@ -1177,9 +1177,9 @@ public class Game
 		{
 			super.paintComponent(g);
 			
-			Image clouds = new ImageIcon("cloud2.gif").getImage();
-			Image title = new ImageIcon("TitleP.png").getImage();
-			Image money = new ImageIcon("money.png").getImage();
+			Image clouds = new ImageIcon("gifs/cloud2.gif").getImage();
+			Image title = new ImageIcon("images/TitleP.png").getImage();
+			Image money = new ImageIcon("images/money.png").getImage();
 			
 			g.drawImage(clouds, 0,0,1500,820,null);
 			g.drawImage(title, -100,20,1500,600,null);
@@ -1263,24 +1263,24 @@ public class Game
 		{	
 			
 			
-			ImageIcon bgB = new ImageIcon("BackG.PNG");
+			ImageIcon bgB = new ImageIcon("images/BackG.PNG");
 			Image img = bgB.getImage() ;  
 			Image newimg = img.getScaledInstance(700, 300,  java.awt.Image.SCALE_SMOOTH ) ;  
 			bgB = new ImageIcon( newimg );
 			
-			ImageIcon enB = new ImageIcon("Entrance.PNG");
+			ImageIcon enB = new ImageIcon("images/Entrance.PNG");
 			img = enB.getImage() ;  
 			newimg = img.getScaledInstance(1600, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			enB = new ImageIcon( newimg );
 				
-			ImageIcon baB = new ImageIcon("Locked.PNG");
-			if(win1) baB = new ImageIcon("Backyard.PNG");
+			ImageIcon baB = new ImageIcon("images/Locked.PNG");
+			if(win1) baB = new ImageIcon("images/Backyard.PNG");
 			img = baB.getImage() ;  
 			newimg = img.getScaledInstance(1600, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			baB = new ImageIcon( newimg );
 				
-			ImageIcon bsB = new ImageIcon("Locked.PNG");
-			if(win2) bsB = new ImageIcon("Basement.PNG");
+			ImageIcon bsB = new ImageIcon("images/Locked.PNG");
+			if(win2) bsB = new ImageIcon("images/Basement.PNG");
 			img = bsB.getImage() ;  
 			newimg = img.getScaledInstance(1600, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			bsB = new ImageIcon( newimg );
@@ -1343,9 +1343,9 @@ public class Game
 		public void paintComponent(Graphics g)
 		{
 			Graphics2D g2d = (Graphics2D)g;
-			Image bg1 = new ImageIcon("map1.jpg").getImage();
-			Image bg2 = new ImageIcon("g2_bg2.jpg").getImage();
-			Image bg3 = new ImageIcon("g3_bg1.jpeg").getImage();
+			Image bg1 = new ImageIcon("images/map1.jpg").getImage();
+			Image bg2 = new ImageIcon("images/g2_bg2.jpg").getImage();
+			Image bg3 = new ImageIcon("images/g3_bg1.jpeg").getImage();
 		
 			g2d.drawImage(bg1, 0, 50, 2000, 715,null);
 			g2d.drawImage(bg2, 500, 50, 2000, 715,null);
@@ -1358,14 +1358,14 @@ public class Game
 			g2d.fillRect(480,0,20,850);
 			g2d.fillRect(1980,0,20,850);
 			
-			ImageIcon baB = new ImageIcon("Locked.PNG");
-			if(win1) baB = new ImageIcon("Backyard.PNG");
+			ImageIcon baB = new ImageIcon("images/Locked.PNG");
+			if(win1) baB = new ImageIcon("images/Backyard.PNG");
 			Image img = baB.getImage() ;  
 			Image newimg = img.getScaledInstance(1600, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			baB = new ImageIcon( newimg );
 				
-			ImageIcon bsB = new ImageIcon("Locked.PNG");
-			if(win2) bsB = new ImageIcon("Basement.PNG");
+			ImageIcon bsB = new ImageIcon("images/Locked.PNG");
+			if(win2) bsB = new ImageIcon("images/Basement.PNG");
 			img = bsB.getImage() ;  
 			newimg = img.getScaledInstance(1600, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			bsB = new ImageIcon( newimg );
@@ -1398,7 +1398,7 @@ public class Game
 			r1 = 1500; r2 = 2500; r3 = 3000;
 			l1 = 150; l2 = 300; l3 = 650;
 			
-			ImageIcon paB = new ImageIcon("Pause.PNG");
+			ImageIcon paB = new ImageIcon("images/Pause.PNG");
 			Image img = paB.getImage() ;  
 			Image newimg = img.getScaledInstance(1000, 400,  java.awt.Image.SCALE_SMOOTH ) ;  
 			paB = new ImageIcon( newimg );
@@ -1503,36 +1503,36 @@ public class Game
 		public void paintComponent(Graphics g)
 		{
 			Graphics2D g2d = (Graphics2D)g;
-			Image bg1 = new ImageIcon("map1.jpg").getImage();
-			Image bg2 = new ImageIcon("map2.jpeg").getImage();
-			Image bgT = new ImageIcon("mapT.png").getImage();
-			Image bgT2 = new ImageIcon("mapT2.png").getImage();
+			Image bg1 = new ImageIcon("images/map1.jpg").getImage();
+			Image bg2 = new ImageIcon("images/map2.jpeg").getImage();
+			Image bgT = new ImageIcon("images/mapT.png").getImage();
+			Image bgT2 = new ImageIcon("images/mapT2.png").getImage();
 			if(player.dead)
 			{
-				bg1 = new ImageIcon("map1R.gif").getImage();
-				bg2 = new ImageIcon("map2R.gif").getImage();
-				bgT = new ImageIcon("mapTR.png").getImage();
-				bgT2 = new ImageIcon("mapT2R.png").getImage();
+				bg1 = new ImageIcon("gifs/map1R.gif").getImage();
+				bg2 = new ImageIcon("gifs/map2R.gif").getImage();
+				bgT = new ImageIcon("images/mapTR.png").getImage();
+				bgT2 = new ImageIcon("images/mapT2R.png").getImage();
 			}
 			
-			Image axe = new ImageIcon("axe copy.gif").getImage();
-			Image mace = new ImageIcon("mace.png").getImage();
-			Image dolls = new ImageIcon("doll.gif").getImage();
-			Image hearts = new ImageIcon("hearts_full.png").getImage();
+			Image axe = new ImageIcon("gifs/axe copy.gif").getImage();
+			Image mace = new ImageIcon("images/mace.png").getImage();
+			Image dolls = new ImageIcon("gifs/doll.gif").getImage();
+			Image hearts = new ImageIcon("images/hearts_full.png").getImage();
 			
 			if(player.deaths >=1 && !win1) score1++;
-			if(player.deaths == 1 && player.death) hearts = new ImageIcon("hearts_2.gif").getImage();
+			if(player.deaths == 1 && player.death) hearts = new ImageIcon("gifs/hearts_2.gif").getImage();
 			if(player.deaths == 2)
 			{
-				if(player.death) hearts = new ImageIcon("hearts_1.gif").getImage();
-				else hearts = new ImageIcon("hearts_2.png").getImage();
+				if(player.death) hearts = new ImageIcon("gifs/hearts_1.gif").getImage();
+				else hearts = new ImageIcon("images/hearts_2.png").getImage();
 			}
 			if(player.deaths == 3)
 			{
-				if(player.death) hearts = new ImageIcon("hearts_none.gif").getImage(); 
-				else hearts = new ImageIcon("hearts_1.png").getImage();
+				if(player.death) hearts = new ImageIcon("gifs/hearts_none.gif").getImage(); 
+				else hearts = new ImageIcon("images/hearts_1.png").getImage();
 			}
-			if(player.deaths == 4) hearts = new ImageIcon("hearts_none.png").getImage();
+			if(player.deaths == 4) hearts = new ImageIcon("images/hearts_none.png").getImage();
 		
 			g2d.drawImage(bg1, x1, 50, 2005, 715,null);
 			g2d.drawImage(bg2, x2, 50, 2005, 715,null);
@@ -1639,7 +1639,7 @@ public class Game
 			
 			bull = new Bullet(this, b1, 225);
 			
-			ImageIcon paB = new ImageIcon("Pause.PNG");
+			ImageIcon paB = new ImageIcon("images/Pause.PNG");
 			Image img = paB.getImage() ;  
 			Image newimg = img.getScaledInstance(1000, 400,  java.awt.Image.SCALE_SMOOTH ) ;  
 			paB = new ImageIcon( newimg );
@@ -1721,19 +1721,19 @@ public class Game
 		public void paintComponent(Graphics g)
 		{
 			super.paintComponent(g);
-			Image background = new ImageIcon("g2_b1.jpeg").getImage();
-			Image shooter = new ImageIcon("shooter.png").getImage();
-			Image squirrel = new ImageIcon("squirrel.gif").getImage();
-			Image squirrelD = new ImageIcon("squirrel_dead.png").getImage();
-			Image squirrelF = new ImageIcon("squirrelF.gif").getImage();
-			Image squirrelDF = new ImageIcon("squirrelF_dead.png").getImage();
-			Image squirrelSD = new ImageIcon("squirrel_superDead.png").getImage();
-			Image squirrelSDF = new ImageIcon("squirrelF_superDead.png").getImage();
-			Image acorns = new ImageIcon("acorns.png").getImage();
-			Image acorn = new ImageIcon("acorn.png").getImage();
-			Image bullet = new ImageIcon("bullet.png").getImage();
-			Image explode = new ImageIcon("explosion.gif").getImage();
-			Image bomb = new ImageIcon("bomb.png").getImage();
+			Image background = new ImageIcon("images/g2_b1.jpeg").getImage();
+			Image shooter = new ImageIcon("images/shooter.png").getImage();
+			Image squirrel = new ImageIcon("gifs/squirrel.gif").getImage();
+			Image squirrelD = new ImageIcon("images/squirrel_dead.png").getImage();
+			Image squirrelF = new ImageIcon("gifs/squirrelF.gif").getImage();
+			Image squirrelDF = new ImageIcon("images/squirrelF_dead.png").getImage();
+			Image squirrelSD = new ImageIcon("images/squirrel_superDead.png").getImage();
+			Image squirrelSDF = new ImageIcon("images/squirrelF_superDead.png").getImage();
+			Image acorns = new ImageIcon("images/acorns.png").getImage();
+			Image acorn = new ImageIcon("images/acorn.png").getImage();
+			Image bullet = new ImageIcon("images/bullet.png").getImage();
+			Image explode = new ImageIcon("gifs/explosion.gif").getImage();
+			Image bomb = new ImageIcon("images/bomb.png").getImage();
 			
 			g.drawImage(background, 0, -150,1800,1200, null);
 			
@@ -1901,7 +1901,7 @@ public class Game
 			player = new PlayerGame3(600,350,this);
 			bull2 = new Bullet2(this, 600, 615);
 			
-			ImageIcon paB = new ImageIcon("Pause.PNG");
+			ImageIcon paB = new ImageIcon("images/Pause.PNG");
 			Image img = paB.getImage() ;  
 			Image newimg = img.getScaledInstance(1000, 400,  java.awt.Image.SCALE_SMOOTH ) ;  
 			paB = new ImageIcon( newimg );
@@ -2024,21 +2024,21 @@ public class Game
 		public void paintComponent(Graphics g)
 		{
 			super.paintComponent(g);
-			Image back1 = new ImageIcon("g3_bg1.jpeg").getImage();
-			Image back2 = new ImageIcon("g3_bg2.jpeg").getImage();
-			Image Rback1 = new ImageIcon("2map1R.gif").getImage();
-			Image Rback2 = new ImageIcon("2map2R.gif").getImage();
-			Image zombie = new ImageIcon("zombie_walk.gif").getImage();
-			Image hand = new ImageIcon("hands.gif").getImage();
-			Image hearts = new ImageIcon("hearts_full.png").getImage();
-			Image launch = new ImageIcon("launcher.png").getImage();
-			Image sword = new ImageIcon("sword.png").getImage();
-			Image sword2 = new ImageIcon("sword2.png").getImage();
+			Image back1 = new ImageIcon("images/g3_bg1.jpeg").getImage();
+			Image back2 = new ImageIcon("images/g3_bg2.jpeg").getImage();
+			Image Rback1 = new ImageIcon("gifs/2map1R.gif").getImage();
+			Image Rback2 = new ImageIcon("gifs/2map2R.gif").getImage();
+			Image zombie = new ImageIcon("gifs/zombie_walk.gif").getImage();
+			Image hand = new ImageIcon("gifs/hands.gif").getImage();
+			Image hearts = new ImageIcon("images/hearts_full.png").getImage();
+			Image launch = new ImageIcon("images/launcher.png").getImage();
+			Image sword = new ImageIcon("images/sword.png").getImage();
+			Image sword2 = new ImageIcon("images/sword2.png").getImage();
 			
 			if(die)
 			{
 				timeDie++;
-				zombie = new ImageIcon("zombie_die.gif").getImage();
+				zombie = new ImageIcon("gifs/zombie_die.gif").getImage();
 				if(timeDie == 84)
 				{
 					timeDie = 0;
@@ -2048,22 +2048,22 @@ public class Game
 			}
 			else 
 			{
-				if(oX[0] < 900 && oX[0] > 600) zombie = new ImageIcon("zombie_attack.gif").getImage();
+				if(oX[0] < 900 && oX[0] > 600) zombie = new ImageIcon("gifs/zombie_attack.gif").getImage();
 			}
 			
 			if(player.deaths >=1 && !win3) score3++;
-			if(player.deaths == 1 && player.death) hearts = new ImageIcon("hearts_2.gif").getImage();
+			if(player.deaths == 1 && player.death) hearts = new ImageIcon("gifs/hearts_2.gif").getImage();
 			if(player.deaths == 2)
 			{
-				if(player.death) hearts = new ImageIcon("hearts_1.gif").getImage();
-				else hearts = new ImageIcon("hearts_2.png").getImage();
+				if(player.death) hearts = new ImageIcon("gifs/hearts_1.gif").getImage();
+				else hearts = new ImageIcon("images/hearts_2.png").getImage();
 			}
 			if(player.deaths == 3)
 			{
-				if(player.death) hearts = new ImageIcon("hearts_none.gif").getImage(); 
-				else hearts = new ImageIcon("hearts_1.png").getImage();
+				if(player.death) hearts = new ImageIcon("gifs/hearts_none.gif").getImage(); 
+				else hearts = new ImageIcon("images/hearts_1.png").getImage();
 			}
-			if(player.deaths == 4) hearts = new ImageIcon("hearts_none.png").getImage();
+			if(player.deaths == 4) hearts = new ImageIcon("images/hearts_none.png").getImage();
 			
 			if(player.dead)
 			{
@@ -2154,12 +2154,12 @@ public class Game
 		//create resume/exit buttons
 		public Pause()
 		{
-			ImageIcon prB = new ImageIcon("pauseResume.PNG");
+			ImageIcon prB = new ImageIcon("images/pauseResume.PNG");
 			Image img = prB.getImage() ;  
 			Image newimg = img.getScaledInstance(650, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			prB = new ImageIcon( newimg );
 			
-			ImageIcon peB = new ImageIcon("pauseExit.PNG");
+			ImageIcon peB = new ImageIcon("images/pauseExit.PNG");
 			img = peB.getImage() ;  
 			newimg = img.getScaledInstance(650, 700,  java.awt.Image.SCALE_SMOOTH ) ;  
 			peB = new ImageIcon( newimg );
@@ -2205,11 +2205,11 @@ public class Game
 		public void paintComponent(Graphics g)
 		{
 			super.paintComponent(g);
-			Image back = new ImageIcon("map1.jpg").getImage();
-			if(win2) back = new ImageIcon("g3_bg2.jpeg").getImage();
-			else if (win1) back = new ImageIcon("g2_b1.jpeg").getImage();
-			else back = new ImageIcon("map1.jpg").getImage();
-			Image pause = new ImageIcon("pauseScreen.png").getImage();
+			Image back = new ImageIcon("images/map1.jpg").getImage();
+			if(win2) back = new ImageIcon("images/g3_bg2.jpeg").getImage();
+			else if (win1) back = new ImageIcon("images/g2_b1.jpeg").getImage();
+			else back = new ImageIcon("images/map1.jpg").getImage();
+			Image pause = new ImageIcon("images/pauseScreen.png").getImage();
 			
 			if(win2) g.drawImage(back,0, 50, 2005, 715,null);
 			else if(win1) g.drawImage(back, 0,-20,1800,1000, null);
@@ -2230,12 +2230,12 @@ public class Game
 		//make money label and jbuttons to go back
 		public Win()
 		{
-			ImageIcon dhB = new ImageIcon("doneHome.png");
+			ImageIcon dhB = new ImageIcon("images/doneHome.png");
 			Image img = dhB.getImage() ;  
 			Image newimg = img.getScaledInstance(725, 800,  java.awt.Image.SCALE_SMOOTH ) ;  
 			dhB = new ImageIcon( newimg );
 			
-			ImageIcon dbB = new ImageIcon("doneBack.png");
+			ImageIcon dbB = new ImageIcon("images/doneBack.png");
 			img = dbB.getImage() ;  
 			newimg = img.getScaledInstance(725, 800,  java.awt.Image.SCALE_SMOOTH ) ;  
 			dbB = new ImageIcon( newimg );
@@ -2282,30 +2282,30 @@ public class Game
 		public void paintComponent(Graphics g)
 		{
 			super.paintComponent(g);
-			Image back = new ImageIcon("map1.jpg").getImage();
-			Image win = new ImageIcon("oneStar.png").getImage();
+			Image back = new ImageIcon("images/map1.jpg").getImage();
+			Image win = new ImageIcon("images/oneStar.png").getImage();
 			
 			if(win1)
 			{ 
-				back = new ImageIcon("map1.jpg").getImage();
-				if(score1 >= 750) win = new ImageIcon("twoStars.png").getImage();
-				if(score1 >= 1250) win = new ImageIcon("threeStars.png").getImage();
+				back = new ImageIcon("images/map1.jpg").getImage();
+				if(score1 >= 750) win = new ImageIcon("images/twoStars.png").getImage();
+				if(score1 >= 1250) win = new ImageIcon("images/threeStars.png").getImage();
 				money.setText(""+(score1/5));
 				g.drawImage(back, 0, 0, 2005, 880,null);
 			}
 			if(win2)
 			{ 
-				back = new ImageIcon("g2_b1.jpeg").getImage();
-				if(score2 >= 35) win = new ImageIcon("twoStars.png").getImage();
-				if(score2 >= 45) win = new ImageIcon("threeStars.png").getImage();
+				back = new ImageIcon("images/g2_b1.jpeg").getImage();
+				if(score2 >= 35) win = new ImageIcon("images/twoStars.png").getImage();
+				if(score2 >= 45) win = new ImageIcon("images/threeStars.png").getImage();
 				money.setText(""+(score2*8));
 				g.drawImage(back,0,-20,1800,1000,null);
 			}
 			if(win3)
 			{ 
-				back = new ImageIcon("g3_bg2.jpeg").getImage();
-				if(score2 >= 750) win = new ImageIcon("twoStars.png").getImage();
-				if(score2 >= 1250) win = new ImageIcon("threeStars.png").getImage();
+				back = new ImageIcon("images/g3_bg2.jpeg").getImage();
+				if(score2 >= 750) win = new ImageIcon("images/twoStars.png").getImage();
+				if(score2 >= 1250) win = new ImageIcon("images/threeStars.png").getImage();
 				money.setText(""+(score3/5));
 				g.drawImage(back,0,-20,1800,1000,null);
 			}
@@ -2450,29 +2450,29 @@ public class Game
 		//draw the character depending on what position it's in
 		public void draw(Graphics2D g2d)
 		{
-			Image charac = new ImageIcon("girlR_dead.gif").getImage();
+			Image charac = new ImageIcon("gifs/girlR_dead.gif").getImage();
 			if(red)
 			{
 				if(idle)
 				{
-					if(faceL) charac = new ImageIcon("girlR_idle2.gif").getImage();
-					else charac = new ImageIcon("girlR_idle.gif").getImage();
+					if(faceL) charac = new ImageIcon("gifs/girlR_idle2.gif").getImage();
+					else charac = new ImageIcon("gifs/girlR_idle.gif").getImage();
 					if(shift){
-						if(left) charac = new ImageIcon("girlR_run2.gif").getImage();
-						if(right) charac = new ImageIcon("girlR_run.gif").getImage();
+						if(left) charac = new ImageIcon("gifs/girlR_run2.gif").getImage();
+						if(right) charac = new ImageIcon("gifs/girlR_run.gif").getImage();
 					}
 					else{
-						if(left) charac = new ImageIcon("girlR_walk2.gif").getImage();
-						if(right) charac = new ImageIcon("girlR_walk.gif").getImage();
+						if(left) charac = new ImageIcon("gifs/girlR_walk2.gif").getImage();
+						if(right) charac = new ImageIcon("gifs/girlR_walk.gif").getImage();
 					}
-					if(up) charac = new ImageIcon("girlR_jump.gif").getImage();
-					if(up && faceL) charac = new ImageIcon("girlR_jump2.gif").getImage();
+					if(up) charac = new ImageIcon("gifs/girlR_jump.gif").getImage();
+					if(up && faceL) charac = new ImageIcon("gifs/girlR_jump2.gif").getImage();
 				}
 				else{
 					if(dead) 
 					{
-						if(left) charac = new ImageIcon("girlR_dead2.gif").getImage();
-						if(right) charac = new ImageIcon("girlR_dead.gif").getImage();
+						if(left) charac = new ImageIcon("gifs/girlR_dead2.gif").getImage();
+						if(right) charac = new ImageIcon("gifs/girlR_dead.gif").getImage();
 						deathLength++;
 						wait++;
 					}
@@ -2486,24 +2486,24 @@ public class Game
 			{
 				if(idle)
 				{
-					if(faceL) charac = new ImageIcon("girl_idle2.gif").getImage();
-					else charac = new ImageIcon("girl_idle.gif").getImage();
+					if(faceL) charac = new ImageIcon("gifs/girl_idle2.gif").getImage();
+					else charac = new ImageIcon("gifs/girl_idle.gif").getImage();
 					if(shift){
-						if(left) charac = new ImageIcon("girl_run2.gif").getImage();
-						if(right) charac = new ImageIcon("girl_run.gif").getImage();
+						if(left) charac = new ImageIcon("gifs/girl_run2.gif").getImage();
+						if(right) charac = new ImageIcon("gifs/girl_run.gif").getImage();
 					}
 					else{
-						if(left) charac = new ImageIcon("girl_walk2.gif").getImage();
-						if(right) charac = new ImageIcon("girl_walk.gif").getImage();
+						if(left) charac = new ImageIcon("gifs/girl_walk2.gif").getImage();
+						if(right) charac = new ImageIcon("gifs/girl_walk.gif").getImage();
 					}
-					if(up) charac = new ImageIcon("girl_jump.gif").getImage();
-					if(up && faceL) charac = new ImageIcon("girl_jump2.gif").getImage();
+					if(up) charac = new ImageIcon("gifs/girl_jump.gif").getImage();
+					if(up && faceL) charac = new ImageIcon("gifs/girl_jump2.gif").getImage();
 				}
 				else{
 					if(dead) 
 					{
-						if(left) charac = new ImageIcon("girl_dead2.gif").getImage();
-						if(right) charac = new ImageIcon("girl_dead.gif").getImage();
+						if(left) charac = new ImageIcon("gifs/girl_dead2.gif").getImage();
+						if(right) charac = new ImageIcon("gifs/girl_dead.gif").getImage();
 						deathLength++;
 						wait++;
 					}
@@ -2635,12 +2635,12 @@ public class Game
 		//draw the character depending on what position it's in
 		public void draw(Graphics2D g2d)
 		{
-			Image charac = new ImageIcon("girl_walk.gif").getImage();
-			if(shift) charac = new ImageIcon("girl_run.gif").getImage(); 
-			if(up) charac = new ImageIcon("girl_jump.gif").getImage();
+			Image charac = new ImageIcon("gifs/girl_walk.gif").getImage();
+			if(shift) charac = new ImageIcon("gifs/girl_run.gif").getImage(); 
+			if(up) charac = new ImageIcon("gifs/girl_jump.gif").getImage();
 			if(down)
 			{ 
-				charac = new ImageIcon("girl_slide.png").getImage();
+				charac = new ImageIcon("images/girl_slide.png").getImage();
 				wC = 300;
 				hC = 150;
 				yC = 600;
@@ -2668,7 +2668,7 @@ public class Game
 			}
 			if(dead) 
 			{
-				charac = new ImageIcon("girlG_dead.gif").getImage();
+				charac = new ImageIcon("gifs/girlG_dead.gif").getImage();
 				deathLength++;
 				wait++;
 				//yC-=5;
@@ -2816,13 +2816,13 @@ public class Game
 		//draw the character depending on what position it's in
 		public void draw(Graphics2D g2d)
 		{
-			Image bullet = new ImageIcon("Bullet2.png").getImage();
-			Image charac = new ImageIcon("girl_walk3.gif").getImage();
-			if(shift) charac = new ImageIcon("girl_run3.gif").getImage(); 
-			if(up) charac = new ImageIcon("girl_jump3.gif").getImage();
+			Image bullet = new ImageIcon("images/Bullet2.png").getImage();
+			Image charac = new ImageIcon("gifs/girl_walk3.gif").getImage();
+			if(shift) charac = new ImageIcon("gifs/girl_run3.gif").getImage(); 
+			if(up) charac = new ImageIcon("gifs/girl_jump3.gif").getImage();
 			if(down)
 			{ 
-				charac = new ImageIcon("girl_slide3.png").getImage();
+				charac = new ImageIcon("images/girl_slide3.png").getImage();
 				wC = 300;
 				hC = 150;
 				yC = 600;
@@ -2863,7 +2863,7 @@ public class Game
 			}
 			if(dead) 
 			{
-				charac = new ImageIcon("girlG_dead.gif").getImage();
+				charac = new ImageIcon("gifs/girlG_dead.gif").getImage();
 				deathLength++;
 				wait++;
 			}
