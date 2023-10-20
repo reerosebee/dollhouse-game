@@ -1,0 +1,16 @@
+Rank	Name	Score
+1	French	2070
+2	N/A	1950
+3	Kim	1337
+4	Arnav	1101
+5	R(arnav)	897
+6	Abhi	871
+7	Riya	870
+8	Test	710
+9	Jolly	663
+10	Riya	403
+11	Elise	399
+12	Louis	348
+13	Anusha	245
+14	Mahati	233
+15	John	200

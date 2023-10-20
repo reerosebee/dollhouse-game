@@ -1,0 +1,17 @@
+Rank	Name	Score
+1	N/A	1495
+2	French	1346
+3	Test	1000
+4	Kim	923
+5	Riya	880
+6	Abhi	829
+7	Arnav	763
+8	R(arnav)	732
+9	Battery	665
+10	Charger	350
+11	Elise	293
+12	Louis	230
+13	Anusha	192
+14	Mahati	154
+15	John	145
+16	Seer	143
